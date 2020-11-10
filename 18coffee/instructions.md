@@ -3,7 +3,7 @@
 Your capabilities are:
 
 - When you are created, you have a capacity for coffee, water and milk.
-- You start with zero amount of coffee, water and milk. (`coffee_cap`, `water_cap`, `milk_cap`)
+- You start with zero amount of coffee, water and milk. (`coffee`, `water`, `milk`)
 - When you are asked for each of your capacities (`coffee_cap`, `water_cap` or `milk_cap`), you will return the integer that represent your capacity.
 - When you are asked for the amount of `coffee`, `water` or `milk`, you will return the integer that represents the amount of said ingredient that you have.
 
