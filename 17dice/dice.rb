@@ -1,13 +1,21 @@
 class Dice
-  @@num_rolls = 0
-
   def roll
-    @@num_rolls += Random.rand(7)
+    @num_rolls = 0
+    @num_rolls += 1
+    Random.rand(7)
   end
+
   def reset
-    @@num_rolls = 0
+    @num_rolls = 0
   end
-  def num_rolls
-    @@num_rolls
-  end
+
+  attr_reader :num_rolls
 end
+
+dice = Dice.new
+p dice.roll
+p dice.roll
+p dice.roll
+p dice.num_rolls
+dice.reset
+p dice.num_rolls
